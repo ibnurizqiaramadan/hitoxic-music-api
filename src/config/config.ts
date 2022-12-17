@@ -8,4 +8,5 @@ export const config = {
   REDIS_HOST: process.env.REDIS_HOST,
   REDIS_PORT: process.env.REDIS_PORT,
   REDIS_PASS: process.env.REDIS_PASS,
+  DB_PREFIX: '',
 };
