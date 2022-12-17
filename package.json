@@ -4,7 +4,9 @@
     "description": "web api for pok pok coy website",
     "main": "src/app.ts",
     "scripts": {
-        "dev": "nodemon --watch './**/*.ts' --exec ts-node ./src/app.ts"
+        "build": "npx tsc",
+        "start": "cross-env NODE_ENV=production node dist/app.js",
+        "dev": "cross-env NODE_ENV=development nodemon --watch './**/*.ts' --exec ts-node ./src/app.ts"
     },
     "repository": {
         "type": "git",
