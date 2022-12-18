@@ -4,3 +4,4 @@ export * from './builder';
 export * from './jwt';
 export * from './logger';
 export * from './redis';
+export * from './cheker';
