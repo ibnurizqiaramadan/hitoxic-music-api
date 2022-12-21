@@ -13,6 +13,8 @@ route.get('/', async (req:Request, res: Response) =>{
   };
   const errorCount = check.getErrorCount();
   const arrEmoji = [ '😢', '😱' ];
+  // eslint-disable-next-line no-undef
+
   res.status(errorCount > 0 ? 500 : 200).send(`
   <title>Pok Pok Coy API</title>
   Pok Pok Coy API ${buildVersion != '' ? `- build (${buildVersion})` : ''}
